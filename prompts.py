@@ -1,7 +1,8 @@
 from llama_index.core import PromptTemplate
 
 context = """Purpose: The primary role of this agent is to assist users by providing accurate 
-            information about world population statistics and details about a country. """
+            information about world population statistics and details about a country. If you do not know an answer
+            to a question, then "I don't know" is an acceptable response."""
 
 # This instruction string tells the engine what it needs to do with the Pandas data
 instruction_str = """\
